@@ -105,3 +105,52 @@ send_slack_message "#ops-alerts" "Web service restart initiated by $(whoami)"
 5. **Include metadata** - Author, date, version when appropriate.
 
 # Remember, good comments make your scripts more maintainable and professional, especially in team environments!
+
+## Demo
+
+### Create a script file named 'commented_script.sh' using nano text editor. This script will display a welcome message, create a directory called script_demo_directory, cd into the created directory, create two files text.txt and text1.txt, add content to the files, list the directory, display a goodbye message and finally cd back to the parent directory.
+
+* Run `nano commented_script.sh`
+
+![](./img/Pasted%20image.png)
+
+### Begin with shebang and add proper description comments to the script.
+
+![](./img/Pasted%20image%20(2).png)
+
+### Add other instructions to perform the overlisted functions to the script, comment it function to make it readable.
+
+![](./img/Pasted%20image%20(10).png)
+
+### List the working directory to make sure the script file is present
+
+* Run `ls` to see files and folders in your working directory
+
+![](./img/Pasted%20image%20(3).png)
+
+
+* Run `cat commented_script.sh` to confirm file contents.
+
+![](./img/Pasted%20image%20(4).png)
+
+* Run `ls -lar commented_script.sh` to long list and see file permisions.
+
+![](./img/Pasted%20image%20(5).png)
+
+* Run `chmod +x commented_script.sh` to give user execution right to the script file. List the directory again to confirm permissions.
+
+![](./img/Pasted%20image%20(6).png)
+
+### Execute the script to see output on terminal.
+
+* Run `./commented_script.sh` to execute script
+
+![](./img/Pasted%20image%20(7).png)
+
+### Script executed as we desired. To further confirm this, ls the directory to see the demo folder created by the script. Chnge directory to the directory created by the switch, list and cat files created by the script.
+
+![](./img/Pasted%20image%20(9).png)
+
+### Every command in our script executed as shown above.
+
+[commented_script.sh](./commented_script.sh)
